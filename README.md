@@ -68,3 +68,12 @@ Puma starting in single mode...
 Use Ctrl-C to stop
 ```
 Now you can open your rails app in the browser at http://localhost:3001
+
+
+
+## Possible errors
+_/var/www/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/fileutils.rb:253:in `mkdir': Permission denied @ dir_s_mkdir - /run/user/1000/spring-33 (Errno::EACCES)_
+Just run 
+```sh
+unset XDG_RUNTIME_DIR
+```
