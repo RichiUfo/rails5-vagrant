@@ -11,4 +11,4 @@ rvm install ruby-2.3.1
 rvm use ruby-2.3.1 --default
 gem install rake
 gem install bundler
-gem install rails
+gem install rails -v 4.2
