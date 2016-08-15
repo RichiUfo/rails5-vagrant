@@ -11,6 +11,12 @@ git clone https://github.com/somenugget/rails5-vagrant.git
 cd rails5-vagrant
 vagrant up
 ```
+or install it with rails 4.2 (works more stable)
+```sh
+git clone -b rails4 https://github.com/somenugget/rails5-vagrant.git rails4-vagrant
+cd rails4-vagrant
+vagrant up
+```
 Connect to your machine via _ssh_
 ```sh
 vagrant ssh
