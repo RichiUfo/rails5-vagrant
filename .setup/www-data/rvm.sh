@@ -5,10 +5,10 @@ rm -rf /var/www/.rvm
 curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 curl -sSL https://get.rvm.io | bash -s stable --rails
 echo '/bin/bash --login' >> ~/.bashrc
+source ~/.rvm/scripts/rvm
 rvm autolibs disable
 rvm reload
 rvm install ruby-2.3.1
-source ~/.rvm/scripts/rvm
 rvm --default use ruby-2.3.1
 gem install rake
 gem install bundler
