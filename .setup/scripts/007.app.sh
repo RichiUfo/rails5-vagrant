@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 APP_PATH="/var/www/${APP_NAME}"
 
 if [ "$(ls -A ${APP_PATH})" ]; then
-   echo "\n\n\n ${APP_PATH} is not empty! \n\n\n"
+   echo "============ ${APP_PATH} is not empty! ==================="
 else
 	su - www-data -c "n | rails new /var/www/${APP_NAME} --database=mysql"
 fi

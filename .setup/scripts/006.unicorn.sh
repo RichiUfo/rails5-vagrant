@@ -10,3 +10,7 @@ sed -i "s/{app}/$APP_NAME/" $APP_UNICORN_CONFIG
 
 sudo chmod 755 ${APP_UNICORN_CONFIG}
 sudo update-rc.d unicorn_${APP_NAME} defaults
+
+echo "
+sudo service unicorn_${APP_NAME} start
+" >> .bash_login
