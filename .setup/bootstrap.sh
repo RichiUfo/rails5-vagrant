@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-
+APP_NAME='profile'
 DIR="/var/www/.setup/scripts/"
+MYSQL_ROOT_PASS="root"
 
 for file in ${DIR}*; do
   echo "***"
-  echo "[MOBIO SH Scripts]: ${file} [START]"
+  echo "[SH Scripts]: ${file} [START]"
   . ${file}
-  echo "[MOBIO SH Scripts]: ${file} [END]"
+  echo "[SH Scripts]: ${file} [END]"
 done

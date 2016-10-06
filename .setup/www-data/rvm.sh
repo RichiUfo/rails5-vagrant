@@ -13,3 +13,4 @@ rvm --default use ruby-2.3.1
 gem install rake
 gem install bundler
 gem install rails
+gem install unicorn
